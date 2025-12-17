@@ -341,18 +341,14 @@
                 <span class="card-title">Inimigo</span>
             </div>
 
-            <div class="card"
-                onclick="abrirImagem('char.png')">
-                <img src="char.png"
-                    class="card-img">
+            <div class="card" onclick="abrirImagem('char.png')">
+                <img src="char.png" class="card-img">
                 <div class="card-overlay"></div>
                 <span class="card-title">Personagem</span>
             </div>
 
-            <div class="card"
-                onclick="abrirImagem('background4a.png')">
-                <img src="background4a.png"
-                    class="card-img">
+            <div class="card" onclick="abrirImagem('background4a.png')">
+                <img src="background4a.png" class="card-img">
                 <div class="card-overlay"></div>
                 <span class="card-title">Background</span>
             </div>
@@ -419,6 +415,12 @@
         }
 
         setInterval(criarParticula, 120);
+
+
+        //Inserir link
+        document.querySelector("button").addEventListener("click", () => {
+            window.open("https://google.com.br", "_blank");
+        });
     </script>
 
 </body>
